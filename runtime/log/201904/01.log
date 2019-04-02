@@ -1,0 +1,153 @@
+---------------------------------------------------------------
+[ 2019-04-01T16:25:50+08:00 ] 127.0.0.1 GET www.tengxunyun.com/index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.129609s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.081477s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.077485s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:27:09+08:00 ] 127.0.0.1 POST www.tengxunyun.com/index/user/register.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.160712s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.129986s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'bujianyiren' LIMIT 1 [ RunTime:0.389631s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `email` = '1160600947@qq.com' LIMIT 1 [ RunTime:0.106918s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '17521247726' LIMIT 1 [ RunTime:0.141515s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user` (`username` , `password` , `email` , `mobile` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `createtime` , `updatetime`) VALUES ('bujianyiren' , '549863134cd6b5608bfca58e4dccd990' , '1160600947@qq.com' , '17521247726' , 1 , 0 , '' , 'bujianyiren' , 'lP7cV8' , 1554107228 , '127.0.0.1' , 1554107228 , '127.0.0.1' , 1554107228 , 'normal' , 1554107228 , 1554107228) [ RunTime:0.111766s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.112208s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.121149s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('9e59d61906d34454d9b8eba403553d3e80c6f5ae' , 2 , 1554107228 , 1556699228) [ RunTime:0.134482s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:27:11+08:00 ] 127.0.0.1 GET www.tengxunyun.com/index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.539110s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.467152s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '9e59d61906d34454d9b8eba403553d3e80c6f5ae' LIMIT 1 [ RunTime:0.443065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.098626s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.113425s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:27:13+08:00 ] 127.0.0.1 GET www.tengxunyun.com/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.179782s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.154509s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '9e59d61906d34454d9b8eba403553d3e80c6f5ae' LIMIT 1 [ RunTime:0.151915s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.161731s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.168055s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:27:18+08:00 ] 127.0.0.1 GET www.tengxunyun.com/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.194348s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.151751s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '9e59d61906d34454d9b8eba403553d3e80c6f5ae' LIMIT 1 [ RunTime:0.134388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.108417s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.113999s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:27:19+08:00 ] 127.0.0.1 GET www.tengxunyun.com/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.192104s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.125023s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '9e59d61906d34454d9b8eba403553d3e80c6f5ae' LIMIT 1 [ RunTime:0.096653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.101281s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.121262s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:27:33+08:00 ] 127.0.0.1 POST www.tengxunyun.com/api/validate/check_username_available.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.192925s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.413850s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '9e59d61906d34454d9b8eba403553d3e80c6f5ae' LIMIT 1 [ RunTime:0.129386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.107957s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.097639s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_user` WHERE  `username` = 'bujianyiren'  AND `id` <> 2 LIMIT 1 [ RunTime:0.111447s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:27:35+08:00 ] 127.0.0.1 POST www.tengxunyun.com/api/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.170060s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.374069s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '9e59d61906d34454d9b8eba403553d3e80c6f5ae' LIMIT 1 [ RunTime:0.082237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.081270s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.129303s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'bujianyiren'  AND `id` <> 2 LIMIT 1 [ RunTime:0.127408s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `avatar`='/assets/img/avatar.png',`bio`='不见伊人，我心伤悲',`updatetime`=1554107254  WHERE  `id` = 2 [ RunTime:0.427834s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:27:57+08:00 ] 127.0.0.1 POST www.tengxunyun.com/api/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.187792s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.411833s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '9e59d61906d34454d9b8eba403553d3e80c6f5ae' LIMIT 1 [ RunTime:0.124797s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.116491s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.129063s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'bujianyiren'  AND `id` <> 2 LIMIT 1 [ RunTime:0.147990s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `nickname`='不见伊人',`updatetime`=1554107276  WHERE  `id` = 2 [ RunTime:0.544542s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:28:02+08:00 ] 127.0.0.1 GET www.tengxunyun.com/index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.183896s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.108778s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '9e59d61906d34454d9b8eba403553d3e80c6f5ae' LIMIT 1 [ RunTime:0.102000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.163693s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.394683s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:28:03+08:00 ] 127.0.0.1 GET www.tengxunyun.com/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.178803s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.107310s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '9e59d61906d34454d9b8eba403553d3e80c6f5ae' LIMIT 1 [ RunTime:0.135633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.158662s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.126768s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:28:09+08:00 ] 127.0.0.1 GET www.tengxunyun.com/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:1.734655s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.117647s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '9e59d61906d34454d9b8eba403553d3e80c6f5ae' LIMIT 1 [ RunTime:0.425573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.419091s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.447790s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:28:10+08:00 ] 127.0.0.1 GET www.tengxunyun.com/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.193208s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.133065s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '9e59d61906d34454d9b8eba403553d3e80c6f5ae' LIMIT 1 [ RunTime:0.125713s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.125957s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.444347s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:28:43+08:00 ] 127.0.0.1 POST www.tengxunyun.com/admin/index/login?url=%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:1.233452s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.424696s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'zhangkuan' LIMIT 1 [ RunTime:0.115899s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `loginfailure`=1,`updatetime`=1554107323  WHERE  `id` = 1 [ RunTime:0.132887s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.113869s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/admin\",\"__token__\":\"0840a5dc889b93c42134aa426d8914bf\",\"username\":\"zhangkuan\",\"captcha\":\"nvyc\"}' , '/admin/index/login?url=%2Fadmin' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36' , '127.0.0.1' , 1554107323) [ RunTime:0.133496s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:29:05+08:00 ] 127.0.0.1 POST www.tengxunyun.com/admin/index/login?url=%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.524452s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.425514s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'zhangkuan' LIMIT 1 [ RunTime:0.168024s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `loginfailure`=2,`updatetime`=1554107344  WHERE  `id` = 1 [ RunTime:0.443864s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.419887s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/admin\",\"__token__\":\"6ef2312f9132b64224d2f7002e9a1deb\",\"username\":\"zhangkuan\",\"captcha\":\"f7zp\"}' , '/admin/index/login?url=%2Fadmin' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36' , '127.0.0.1' , 1554107345) [ RunTime:0.121372s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:29:58+08:00 ] 127.0.0.1 POST www.tengxunyun.com/admin/index/login?url=%2Fadmin
+[ sql ] [ DB ] CONNECT:[ UseTime:3.197248s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.122277s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'zhangkuan' LIMIT 1 [ RunTime:0.413965s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `loginfailure`=0,`logintime`=1554107397,`token`='0bdf89b2-a903-4027-8b7d-369388b43904',`updatetime`=1554107397  WHERE  `id` = 1 [ RunTime:0.147876s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.163693s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/admin\",\"__token__\":\"13dd429ee2325faddb0c04af8707ccfe\",\"username\":\"zhangkuan\",\"captcha\":\"wbkn\"}' , '/admin/index/login?url=%2Fadmin' , 1 , 'zhangkuan' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36' , '127.0.0.1' , 1554107397) [ RunTime:0.166579s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:29:59+08:00 ] 127.0.0.1 GET www.tengxunyun.com/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.165928s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.104093s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.106481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.126257s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.120105s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 1 ORDER BY `weigh` DESC [ RunTime:0.107099s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:30:01+08:00 ] 127.0.0.1 GET www.tengxunyun.com/admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.519097s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.168685s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.440814s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.117808s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.126511s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.148009s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:35:12+08:00 ] 127.0.0.1 GET www.tengxunyun.com/zhangkuan.php
+[ sql ] [ DB ] CONNECT:[ UseTime:0.187394s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.114011s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.116312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.119298s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.123792s ]
+---------------------------------------------------------------
+[ 2019-04-01T16:35:14+08:00 ] 127.0.0.1 GET www.tengxunyun.com/zhangkuan.php/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.231027s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.152173s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.134461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.146611s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.449305s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.163551s ]

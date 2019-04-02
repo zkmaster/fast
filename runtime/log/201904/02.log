@@ -1,0 +1,23 @@
+---------------------------------------------------------------
+[ 2019-04-02T11:50:07+08:00 ] 127.0.0.1 POST www.tengxunyun.com/zhangkuan.php/index/login?url=%2Fzhangkuan.php
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116402s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.112246s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'zhangkuan' LIMIT 1 [ RunTime:0.077959s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `logintime`=1554177007,`token`='772085c4-1e8e-482d-9da2-7fed7fbac844',`updatetime`=1554177007  WHERE  `id` = 1 [ RunTime:0.084952s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.076630s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/zhangkuan.php\",\"__token__\":\"559198f0dd7359f6509637a45fc727f0\",\"username\":\"zhangkuan\",\"captcha\":\"vu3j\"}' , '/zhangkuan.php/index/login?url=%2Fzhangkuan.php' , 1 , 'zhangkuan' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36' , '127.0.0.1' , 1554177007) [ RunTime:0.078342s ]
+---------------------------------------------------------------
+[ 2019-04-02T11:50:08+08:00 ] 127.0.0.1 GET www.tengxunyun.com/zhangkuan.php
+[ sql ] [ DB ] CONNECT:[ UseTime:0.130942s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.086816s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.086016s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.086136s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.087072s ]
+---------------------------------------------------------------
+[ 2019-04-02T11:50:09+08:00 ] 127.0.0.1 GET www.tengxunyun.com/zhangkuan.php/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.124533s ] mysql:host=118.24.208.244;dbname=tengxun;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.079310s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.080393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.079433s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.082951s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.078897s ]
